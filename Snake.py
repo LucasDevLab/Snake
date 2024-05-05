@@ -139,7 +139,7 @@ def show_menu():
     play_rect = play_text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 50))
     options_text = font.render("Options", True, BLACK)
     options_rect = options_text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2))
-    quit_text = font.render("Quitter", True, RED)  # Changement de couleur en rouge
+    quit_text = font.render("Quitter", True, RED)
     quit_rect = quit_text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 50))
 
     while True:
@@ -169,8 +169,8 @@ def show_options_menu():
     font = pygame.font.Font(None, 36)
     back_text = font.render("Retour", True, BLACK)
     back_rect = back_text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 150))
-    validate_text = font.render("Valider", True, BLACK)  # Ajout du texte pour le bouton "Valider"
-    validate_rect = validate_text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 100))  # Position du bouton "Valider"
+    validate_text = font.render("Valider", True, BLACK)
+    validate_rect = validate_text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 100))
 
     key_texts = {}
     key_rects = {}
